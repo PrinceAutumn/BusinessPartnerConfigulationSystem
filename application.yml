@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/bd1906?serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    mybatis:
+      mapper-locations: classpath:/resources/mappers/*.xml
+      type-aliases-package: com.example.demo.dao
+server:
+  port: 8080
+    servlet:
+      context-path: /demo
